@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Путешествия — Настройки</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <div class="logo">Путешествия</div>
+        <div class="links">
+            <a href="index.html">Главная</a>
+            <a href="profile.html">Профиль</a>
+            <a href="settings.html">Настройки</a>
+        </div>
+    </nav>
+    <main class="app-content">
+        <section class="settings-group">
+            <h3>Уведомления</h3>
+            <div class="setting-item">
+                <label>Push-уведомления</label>
+                <div class="switch active" data-switch></div>
+            </div>
+            <div class="setting-item">
+                <label>Email-рассылка</label>
+                <div class="switch" data-switch></div>
+            </div>
+        </section>
+        <section class="settings-group">
+            <h3>Интерфейс</h3>
+            <div class="setting-item">
+                <label>Язык</label>
+                <select>
+                    <option>Русский</option>
+                    <option>English</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label>Валюта</label>
+                <select>
+                    <option>Рубль</option>
+                    <option>Доллар</option>
+                    <option>Евро</option>
+                </select>
+            </div>
+        </section>
+        <section class="settings-group">
+            <h3>О приложении</h3>
+            <div class="setting-item">
+                <label>Версия</label>
+                <span style="color:#8994a0;font-size:0.9rem;">1.0.0</span>
+            </div>
+            <div class="setting-item">
+                <label>Пользовательское соглашение</label>
+                <span class="arrow">›</span>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

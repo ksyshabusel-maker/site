@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Путешествия — Главная</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <div class="logo">Путешествия</div>
+        <div class="links">
+            <a href="index.html">Главная</a>
+            <a href="profile.html">Профиль</a>
+            <a href="settings.html">Настройки</a>
+        </div>
+    </nav>
+
+    <main class="app-content">
+        <div class="cards-container">
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Париж">
+                <div class="card-info">
+                    <span class="badge">Хит продаж</span>
+                    <h2>Париж</h2>
+                    <p class="country">Франция</p>
+                    <p class="description">
+                        Париж — один из самых романтичных и популярных городов Европы.
+                        Посетите Эйфелеву башню, Лувр и прогуляйтесь по Елисейским полям.
+                    </p>
+                    <div class="features">
+                        <span>7 дней</span>
+                        <span>Отель 4</span>
+                        <span>Завтрак включён</span>
+                        <span>Гид</span>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="price-block">
+                            <span class="price">2 900 руб <small>/ чел.</small></span>
+                            <span class="rating">4.8 · 120 отзывов</span>
+                        </div>
+                        <button onclick="openCityModal('paris')">Подробнее</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80" alt="Токио">
+                <div class="card-info">
+                    <span class="badge hot">Горящий тур</span>
+                    <h2>Токио</h2>
+                    <p class="country">Япония</p>
+                    <p class="description">
+                        Токио — удивительное сочетание древних храмов и неоновых улиц.
+                        Смотровая площадка Tokyo Tower, район Сибуя и гора Фудзи рядом.
+                    </p>
+                    <div class="features">
+                        <span>10 дней</span>
+                        <span>Отель 5</span>
+                        <span>Трансфер</span>
+                        <span>Гид</span>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="price-block">
+                            <span class="price">1 500 руб <small>/ чел.</small></span>
+                            <span class="rating">4.9 · 87 отзывов</span>
+                        </div>
+                        <button onclick="openCityModal('tokyo')">Подробнее</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80" alt="Рим">
+                <div class="card-info">
+                    <span class="badge new">Новинка</span>
+                    <h2>Рим</h2>
+                    <p class="country">Италия</p>
+                    <p class="description">
+                        Рим — вечный город с тысячелетней историей. Колизей, фонтан Треви,
+                        Ватикан и лучшая паста в мире ждут вас.
+                    </p>
+                    <div class="features">
+                        <span>5 дней</span>
+                        <span>Отель 4</span>
+                        <span>Экскурсии</span>
+                        <span>Завтрак</span>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="price-block">
+                            <span class="price">3 700 руб <small>/ чел.</small></span>
+                            <span class="rating">4.7 · 156 отзывов</span>
+                        </div>
+                        <button onclick="openCityModal('rome')">Подробнее</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Дубай">
+                <div class="card-info">
+                    <span class="badge">Хит продаж</span>
+                    <h2>Дубай</h2>
+                    <p class="country">ОАЭ</p>
+                    <p class="description">
+                        Дубай — город роскоши и футуризма. Самое высокое здание Бурдж-Халифа,
+                        искусственные острова и шопинг в огромных моллах.
+                    </p>
+                    <div class="features">
+                        <span>7 дней</span>
+                        <span>Отель 5</span>
+                        <span>Всё включено</span>
+                        <span>Пляж</span>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="price-block">
+                            <span class="price">3 300 руб <small>/ чел.</small></span>
+                            <span class="rating">4.9 · 210 отзывов</span>
+                        </div>
+                        <button onclick="openCityModal('dubai')">Подробнее</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="cityModal"></div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
